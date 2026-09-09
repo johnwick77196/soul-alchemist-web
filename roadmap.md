@@ -1,0 +1,3 @@
+- [x] Build the single-page Soul Alchemist homepage
+- [x] Add responsive navigation, intro sequence, and purposeful motion
+- [x] Define the warm mystical design system and verify the live page
