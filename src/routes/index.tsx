@@ -209,15 +209,39 @@ function Index() {
             <Eyebrow>My Services</Eyebrow>
             <h2>Choose what speaks<br className="mobile-only" /> to your soul</h2>
           </Reveal>
-          <motion.div className="services-grid" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} variants={{ visible: { transition: { staggerChildren: 0.09 } } }}>
+          <motion.div
+            className="services-grid"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+          >
             {services.map((service) => {
               const Icon = service.icon;
-              return <motion.article className="service-card" key={service.title} variants={staggerItem}>
-                <div className="service-icon"><Icon size={20} strokeWidth={1.35} /></div>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-                <a className="card-link" href="#contact">Learn More <ArrowUpRight size={14} /></a>
-              </motion.article>;
+              return (
+                <motion.article
+                  className="service-card"
+                  key={service.title}
+                  variants={{
+                    hidden: { opacity: 0, y: 40, scale: 0.92, rotateX: 8 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      scale: 1,
+                      rotateX: 0,
+                      transition: { type: "spring", stiffness: 120, damping: 14 },
+                    },
+                  }}
+                  {...(reducedMotion ? {} : { whileHover: { y: -10, scale: 1.02, transition: { duration: 0.3, ease: [0.16, 1, 0.3, 1] } } })}
+                >
+                  <div className="service-icon">
+                    <Icon size={22} strokeWidth={1.35} />
+                  </div>
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                  <a className="card-link" href="#contact">Learn More <ArrowUpRight size={14} /></a>
+                </motion.article>
+              );
             })}
           </motion.div>
         </section>
