@@ -108,6 +108,7 @@
   --about-end: oklch(0.58 0.11 43);
   --why-start: oklch(0.57 0.12 43);
   --why-end: oklch(0.72 0.11 59);
+  --terracotta-brown: oklch(0.46 0.095 42);
 }
 
 .dark {
