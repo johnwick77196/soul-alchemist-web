@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import heroImage from "@/assets/mobile1.webp.asset.json";
+import aboutImage from "@/assets/mobile_2.webp.asset.json";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
