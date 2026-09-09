@@ -269,7 +269,7 @@ h2 { margin: 0; font-size: clamp(35px, 4vw, 54px); letter-spacing: -.025em; line
 .footer-tagline span { color: var(--primary); font-style: normal; }
 
 @media (min-width: 901px) {
-  .caption-badge { bottom: -14px; left: 20px; }
+  .caption-badge { bottom: 28px; left: -36px; }
 }
 
 @media (max-width: 900px) {
