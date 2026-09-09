@@ -17,6 +17,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import heroImage from "@/assets/mobile1.webp.asset.json";
 import aboutImage from "@/assets/mobile_2.webp.asset.json";
+import whyImage from "@/assets/mobile_3.webp.asset.json";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -255,7 +256,9 @@ function Index() {
               <a className="button button-primary" href="#contact">Know More About Me <ArrowUpRight size={16} /></a>
             </div>
             <div className="feature-visual feature-visual-image" role="img" aria-label="Overhead flat-lay of crystals, tarot card, incense burner, candle, rune stones, pendulum and coins">
-              <img src={aboutImage.url} alt="Crystals, tarot card, incense burner, candle, rune stones, pendulum and coins on a dark cloth" />
+              <div className="feature-image-frame">
+                <img src={aboutImage.url} alt="Crystals, tarot card, incense burner, candle, rune stones, pendulum and coins on a dark cloth" />
+              </div>
               <div className="caption-badge">Your energy is sacred</div>
             </div>
           </Reveal>
@@ -270,8 +273,10 @@ function Index() {
                 {whyItems.map((item) => <li key={item}><span className="check-icon"><Check size={13} strokeWidth={2.2} /></span>{item}</li>)}
               </ul>
             </div>
-            <div className="feature-visual surface-why" role="img" aria-label="Terracotta spiritual image placeholder">
-              <div className="why-orbit orbit-one" aria-hidden="true" /><div className="why-orbit orbit-two" aria-hidden="true" /><Moon className="why-moon" size={82} strokeWidth={0.75} />
+            <div className="feature-visual feature-visual-image" role="img" aria-label="Open journal with Higher Energy Bigger Dreams, lit candle, tarot cards, crystals on brass astrology plate">
+              <div className="feature-image-frame">
+                <img src={whyImage.url} alt="Open journal reading Higher Energy Bigger Dreams next to a lit candle, tarot cards, crystals, and dried flowers" />
+              </div>
             </div>
           </Reveal>
         </section>
