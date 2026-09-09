@@ -307,11 +307,9 @@ h2 { margin: 0; font-size: clamp(35px, 4vw, 54px); letter-spacing: -.025em; line
   .section { padding-top: 72px; padding-bottom: 72px; }
   .mobile-only { display: inline; }
   .desktop-only { display: none; }
-  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .service-card { min-height: 255px; padding: 23px 16px; }
-  .service-card h3 { min-height: 54px; font-size: 16px; }
-  .service-card p { font-size: 11px; }
-  .service-icon { margin-bottom: 24px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { min-height: auto; padding: 28px; }
+  .service-card h3 { min-height: auto; font-size: 18px; }
   .feature-visual { min-height: 285px; }
   .feature-copy { padding: 42px 27px 48px; }
   .feature-copy h2 { font-size: 35px; }
