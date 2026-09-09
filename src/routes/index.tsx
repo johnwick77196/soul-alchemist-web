@@ -232,7 +232,7 @@ function Index() {
                       transition: { type: "spring", stiffness: 120, damping: 14 },
                     },
                   }}
-                  whileHover={reducedMotion ? undefined : { y: -10, scale: 1.02, transition: { duration: 0.3, ease: [0.16, 1, 0.3, 1] } }}
+                  {...(reducedMotion ? {} : { whileHover: { y: -10, scale: 1.02, transition: { duration: 0.3, ease: [0.16, 1, 0.3, 1] } } })}
                 >
                   <div className="service-icon">
                     <Icon size={22} strokeWidth={1.35} />
