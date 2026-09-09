@@ -52,8 +52,8 @@ function BrandMark({ light = false }: { light?: boolean }) {
         <span className="brand-mark-star">✦</span>
       </div>
       <div className="min-w-0">
-        <p className={light ? "brand-name text-sage-ink" : "brand-name"}>THE SOUL ALCHEMIST</p>
-        <p className={light ? "brand-tagline text-sage-ink/70" : "brand-tagline"}>TAROT · AKASHIC · HEALING</p>
+        <p className={light ? "brand-name brand-name-light" : "brand-name"}>THE SOUL ALCHEMIST</p>
+        <p className={light ? "brand-tagline brand-tagline-light" : "brand-tagline"}>TAROT · AKASHIC · HEALING</p>
       </div>
     </div>
   );

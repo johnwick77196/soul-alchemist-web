@@ -180,6 +180,8 @@
 .brand-name { margin: 0; color: var(--foreground); font-family: var(--font-display); font-size: 12px; letter-spacing: .13em; line-height: 1.2; white-space: nowrap; }
 .brand-tagline { margin: 5px 0 0; color: var(--muted-foreground); font-size: 7px; letter-spacing: .19em; line-height: 1; white-space: nowrap; }
 .brand-mark-light { border-color: var(--sage-ink); color: var(--sage-ink); }
+.brand-name-light { color: var(--foreground); }
+.brand-tagline-light { color: var(--muted-foreground); }
 .desktop-nav { display: flex; align-items: center; gap: 27px; }
 .nav-link { position: relative; color: var(--muted-foreground); font-size: 12px; transition: color .25s ease; }
 .nav-link::after { position: absolute; right: 0; bottom: -8px; left: 0; height: 1px; background: var(--primary); content: ""; transform: scaleX(0); transform-origin: center; transition: transform .25s ease; }
