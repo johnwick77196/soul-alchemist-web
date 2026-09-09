@@ -234,7 +234,9 @@ h2 { margin: 0; font-size: clamp(35px, 4vw, 54px); letter-spacing: -.025em; line
 .feature-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(40px, 7vw, 90px); }
 .feature-copy h2 { max-width: 460px; }
 .feature-copy > p { max-width: 425px; margin: 26px 0 31px; color: var(--muted-foreground); font-size: 14px; line-height: 1.85; }
-.feature-visual { position: relative; min-height: 420px; overflow: hidden; }
+.feature-visual { position: relative; min-height: 420px; }
+.feature-image-frame { position: absolute; inset: 0; overflow: hidden; border-radius: 0 24px 24px 0; }
+.feature-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .surface-about { background: linear-gradient(145deg, var(--about-start), var(--about-end)); }
 .surface-why { background: linear-gradient(145deg, var(--why-start), var(--why-end)); }
 .about-stars { position: absolute; top: 21%; right: 21%; color: color-mix(in oklab, var(--primary-foreground) 78%, transparent); font-family: var(--font-script); font-size: 34px; line-height: 1.5; transform: rotate(12deg); }
