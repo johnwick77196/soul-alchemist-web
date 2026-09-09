@@ -197,10 +197,8 @@ function Index() {
             </motion.div>
           </motion.div>
           <motion.div className="hero-visual-wrap" initial={reducedMotion ? false : { opacity: 0, x: 28, scale: 0.94 }} animate={reducedMotion || !introVisible ? { opacity: 1, x: 0, scale: 1 } : { opacity: 0, x: 28, scale: 0.94 }} transition={{ duration: 1, delay: 0.34, ease }}>
-            <div className="hero-visual surface-hero" aria-label="Warm tarot cards and crystals placeholder" role="img">
-              <div className="hero-sun" aria-hidden="true"><SunGlyph /></div>
-              <div className="hero-card-shape" aria-hidden="true"><Star size={34} strokeWidth={1} /></div>
-              <p className="visual-caption">A reading is a mirror<br />for the soul.</p>
+            <div className="hero-visual" aria-label="Tarot cards wrapped in linen with a lit candle and amethyst crystal" role="img">
+              <img src={heroImage.url} alt="Tarot cards wrapped in linen with a lit candle and amethyst crystal" />
             </div>
             <div className="floating-note"><Moon size={17} strokeWidth={1.4} /><span>Messages from your higher self<br />are always within reach.</span></div>
           </motion.div>
