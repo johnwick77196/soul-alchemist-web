@@ -226,13 +226,13 @@ h1 em { color: var(--primary); font-family: var(--font-script); font-size: 1.08e
 .section-heading { margin-bottom: 48px; text-align: center; }
 .section-heading .eyebrow { margin-bottom: 15px; }
 h2 { margin: 0; font-size: clamp(35px, 4vw, 54px); letter-spacing: -.025em; line-height: 1.05; }
-.services-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.service-card { min-height: 290px; border-right: 1px solid var(--border); padding: 30px 22px 26px; transition: background .25s ease, transform .25s ease, box-shadow .25s ease; }
-.service-card:first-child { border-left: 1px solid var(--border); }
-.service-card:hover { position: relative; z-index: 1; background: color-mix(in oklab, var(--surface-warm) 44%, transparent); box-shadow: 0 14px 28px color-mix(in oklab, var(--foreground) 7%, transparent); transform: translateY(-5px); }
-.service-icon { display: grid; width: 43px; height: 43px; place-items: center; margin-bottom: 35px; border: 1px solid color-mix(in oklab, var(--primary) 48%, transparent); border-radius: 50%; color: var(--primary); }
+.services-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; perspective: 1000px; }
+.service-card { min-height: 290px; border-radius: 20px; padding: 36px; background: #F0E6D8; box-shadow: 0 8px 24px -12px rgba(58, 46, 40, 0.15); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+.service-card:hover { box-shadow: 0 20px 40px -16px rgba(58, 46, 40, 0.25); }
+.service-icon { display: grid; width: 48px; height: 48px; place-items: center; margin-bottom: 32px; border: 1px solid color-mix(in oklab, var(--primary) 48%, transparent); border-radius: 50%; color: var(--primary); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+.service-card:hover .service-icon { transform: scale(1.08) rotate(-4deg); }
 .service-card h3 { min-height: 44px; margin: 0; font-size: 19px; line-height: 1.18; }
-.service-card p { min-height: 40px; margin: 11px 0 22px; color: var(--muted-foreground); font-size: 12px; line-height: 1.45; }
+.service-card p { min-height: 40px; margin: 11px 0 22px; color: var(--muted-foreground); font-size: 13px; line-height: 1.5; }
 .card-link { color: var(--primary); font-size: 11px; }
 .feature-panel { display: grid; grid-template-columns: .88fr 1.12fr; min-height: 545px; overflow: hidden; border-radius: 24px; background: var(--surface-warm); }
 .feature-panel-why { grid-template-columns: 1fr 1fr; }
