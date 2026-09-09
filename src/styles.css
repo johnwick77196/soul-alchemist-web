@@ -288,6 +288,7 @@ h2 { margin: 0; font-size: clamp(35px, 4vw, 54px); letter-spacing: -.025em; line
   .service-card { padding: 28px; }
   .feature-panel, .feature-panel-why { grid-template-columns: 1fr; }
   .feature-visual { order: -1; min-height: 360px; }
+  .feature-image-frame { border-radius: 24px 24px 0 0; }
   .feature-copy { padding: 55px 42px 60px; }
   .cta-band { grid-template-columns: 1fr; gap: 42px; padding: 55px 42px; }
   .footer-top { grid-template-columns: 1fr auto; }
