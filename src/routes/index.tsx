@@ -256,7 +256,9 @@ function Index() {
               <a className="button button-primary" href="#contact">Know More About Me <ArrowUpRight size={16} /></a>
             </div>
             <div className="feature-visual feature-visual-image" role="img" aria-label="Overhead flat-lay of crystals, tarot card, incense burner, candle, rune stones, pendulum and coins">
-              <img src={aboutImage.url} alt="Crystals, tarot card, incense burner, candle, rune stones, pendulum and coins on a dark cloth" />
+              <div className="feature-image-frame">
+                <img src={aboutImage.url} alt="Crystals, tarot card, incense burner, candle, rune stones, pendulum and coins on a dark cloth" />
+              </div>
               <div className="caption-badge">Your energy is sacred</div>
             </div>
           </Reveal>
