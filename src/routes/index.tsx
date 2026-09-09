@@ -273,8 +273,10 @@ function Index() {
                 {whyItems.map((item) => <li key={item}><span className="check-icon"><Check size={13} strokeWidth={2.2} /></span>{item}</li>)}
               </ul>
             </div>
-            <div className="feature-visual surface-why" role="img" aria-label="Terracotta spiritual image placeholder">
-              <div className="why-orbit orbit-one" aria-hidden="true" /><div className="why-orbit orbit-two" aria-hidden="true" /><Moon className="why-moon" size={82} strokeWidth={0.75} />
+            <div className="feature-visual feature-visual-image" role="img" aria-label="Open journal with Higher Energy Bigger Dreams, lit candle, tarot cards, crystals on brass astrology plate">
+              <div className="feature-image-frame">
+                <img src={whyImage.url} alt="Open journal reading Higher Energy Bigger Dreams next to a lit candle, tarot cards, crystals, and dried flowers" />
+              </div>
             </div>
           </Reveal>
         </section>
