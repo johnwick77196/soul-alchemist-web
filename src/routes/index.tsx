@@ -254,8 +254,8 @@ function Index() {
               <p>There is no perfect time to come home to yourself. Through tarot, the Akashic records, and a deeply intuitive practice, I offer grounded guidance for the tender, transformative seasons of life.</p>
               <a className="button button-primary" href="#contact">Know More About Me <ArrowUpRight size={16} /></a>
             </div>
-            <div className="feature-visual surface-about" role="img" aria-label="Warm dark spiritual image placeholder">
-              <div className="about-stars" aria-hidden="true">✦　·　✧<br />　·　✦　·</div>
+            <div className="feature-visual feature-visual-image" role="img" aria-label="Overhead flat-lay of crystals, tarot card, incense burner, candle, rune stones, pendulum and coins">
+              <img src={aboutImage.url} alt="Crystals, tarot card, incense burner, candle, rune stones, pendulum and coins on a dark cloth" />
               <div className="caption-badge">Your energy is sacred</div>
             </div>
           </Reveal>
