@@ -159,7 +159,7 @@ function Index() {
         <div className="page-shell nav-shell">
           <a href="#home" aria-label="The Soul Alchemist home"><BrandMark /></a>
           <nav className="desktop-nav" aria-label="Primary navigation">
-            {["Home", "About", "Services", "Testimonials", "Blog", "Contact"].map((item) => (
+            {["Home", "About", "Services", "Contact"].map((item) => (
               <a key={item} className={item === "Home" ? "nav-link nav-link-active" : "nav-link"} href={item === "Home" ? "#home" : `#${item.toLowerCase()}`}>
                 {item}
               </a>
@@ -175,7 +175,7 @@ function Index() {
         <AnimatePresence>
           {menuOpen && (
             <motion.nav className="mobile-nav" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.35, ease }} aria-label="Mobile navigation">
-              {["Home", "About", "Services", "Testimonials", "Blog", "Contact"].map((item) => (
+              {["Home", "About", "Services", "Contact"].map((item) => (
                 <a key={item} href={item === "Home" ? "#home" : `#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item}</a>
               ))}
               <a className="button button-primary" href="#contact" onClick={() => setMenuOpen(false)}>Book a Session <ArrowUpRight size={15} /></a>
